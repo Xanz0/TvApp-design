@@ -1,0 +1,137 @@
+.tv-section {
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 20px;
+}
+
+.tv-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.tv-header h3 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #222;
+}
+
+.tv-header a {
+  text-decoration: none;
+  color: #0077ff;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.tv-header a:hover {
+  color: #0056b3;
+}
+
+/* ==== GRID LAYOUT (Desktop) ==== */
+.tv-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 ustun */
+  grid-template-rows: repeat(2, 250px); /* 2 qator */
+  gap: 20px;
+}
+
+/* Card umumiy uslubi */
+.tv-card {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.tv-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+}
+
+.tv-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.tv-card h4 {
+  position: absolute;
+  bottom: 10px;
+  left: 12px;
+  margin: 0;
+  padding: 4px 10px;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+/* Katta card (chap 2x2) */
+.tv-card.big {
+  grid-column: 1 / 3;
+  grid-row: 1 / 3;
+}
+
+/* O‘ng tepada keng card (2x1) */
+.tv-card.wide {
+  grid-column: 3 / 5;
+  grid-row: 1 / 2;
+}
+
+/* Pastki kichik cardlar */
+.tv-card.small:nth-of-type(3) {
+  grid-column: 3 / 4;
+  grid-row: 2 / 3;
+}
+
+.tv-card.small:nth-of-type(4) {
+  grid-column: 4 / 5;
+  grid-row: 2 / 3;
+}
+
+/* ==== RESPONSIVE STYLES ==== */
+
+/* Tablet (2 ustun) */
+@media (max-width: 1023px) {
+  .tv-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+  }
+
+  .tv-card.big {
+    grid-column: 1 / 3;
+    grid-row: auto;
+    height: 300px;
+  }
+
+  .tv-card.wide {
+    grid-column: 1 / 3;
+    grid-row: auto;
+    height: 200px;
+  }
+
+  .tv-card.small {
+    grid-column: auto;
+    grid-row: auto;
+    height: 200px;
+  }
+}
+
+/* Mobile (1 ustun) */
+@media (max-width: 767px) {
+  .tv-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+
+  .tv-card.big,
+  .tv-card.wide,
+  .tv-card.small {
+    grid-column: 1 / 2;
+    grid-row: auto;
+    height: 220px;
+  }
+}

@@ -1,0 +1,87 @@
+.hero-section {
+  width: 100%;
+  background: rgb(235, 242, 240);
+}
+
+.hero-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: stretch; /* ikkala tomon balandligi teng bo‘lishi uchun */
+  justify-content: space-between;
+  gap: 40px;
+  min-height: 500px; /* umumiy section balandligi */
+  padding: 40px 20px;
+}
+
+.hero-left {
+  flex: 1;
+}
+
+.hero-left img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* balandlikka moslashadi */
+  border-radius: 12px;
+}
+
+.hero-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column; /* ustma-ust joylashadi */
+  justify-content: center; /* vertikal markazga */
+  text-align: start;
+}
+
+.hero-right h1 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #222;
+}
+
+.hero-right p {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 25px;
+  line-height: 1.6;
+}
+
+.hero-btn {
+  background: #0077ff;
+  color: #fff;
+  padding: 12px 28px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  width: fit-content;
+  transition: background 0.3s;
+}
+
+.hero-btn:hover {
+  background: #005fcc;
+}
+
+/* Responsiv */
+@media (max-width: 900px) {
+  .hero-container {
+    flex-direction: column;
+    min-height: auto; /* mobil uchun avtomatik balandlik */
+    text-align: center;
+  }
+
+  .hero-left img {
+    max-height: 300px;
+    border-radius: 12px;
+  }
+
+  .hero-right {
+    margin-top: 20px;
+    align-items: center; /* matn va button markazda */
+  }
+
+  .hero-btn {
+    width: auto;
+  }
+}
