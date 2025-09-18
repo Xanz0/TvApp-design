@@ -4,7 +4,7 @@ import Header from './assets/Header';
 import Main from './assets/Main';
 import Footer from './assets/Footer';
 import './App.css';
-// import Yangiliklar from './assets/News';
+import Motion from './assets/Motionn';
 
 const App = () => {
 
@@ -19,7 +19,7 @@ const App = () => {
               </div>
             } 
             />
-            {/* <Route path="/yangiliklar" element={<Yangiliklar/>} /> */}
+            <Route path="/motion" element={<Motion/>} />
 
 
 

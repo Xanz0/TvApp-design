@@ -13,7 +13,7 @@ export default function Footer() {
         </nav>
 
         <p className="footer-text">
-          © {new Date().getFullYear()} NavoiyTv. Barcha huquqlar himoyalangan.
+          © {new Date().getFullYear()} Navoiy Tv. Barcha huquqlar himoyalangan.
         </p>
 
         
