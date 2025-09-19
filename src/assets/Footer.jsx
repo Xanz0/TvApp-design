@@ -7,13 +7,13 @@ export default function Footer() {
       <div className="container footer-inner">
 
       <nav className="footer-links">
-          <a href="#">Biz haqimizda</a>
+          <a href="/Motion">Biz haqimizda</a>
           <a href="#">Aloqa</a>
           <a href="#">Maxfiylik siyosati</a>
         </nav>
 
         <p className="footer-text">
-          © {new Date().getFullYear()} Navoiy Tv. Barcha huquqlar himoyalangan.
+          © {new Date().getFullYear()} Navoiy Yoshlar Tv. Barcha huquqlar himoyalangan.
         </p>
 
         
@@ -21,7 +21,7 @@ export default function Footer() {
         <div className="footer-contact">
           <p>📍 Navoiy, O‘zbekiston</p>
           <p>📞 +998 (90) 123-45-67</p>
-          <p>📧 info@navoiyv.uz</p>
+          <p>📧 info@navoiy.uz</p>
         </div>
       </div>
     </footer>

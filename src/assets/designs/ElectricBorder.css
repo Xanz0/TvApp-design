@@ -1,0 +1,19 @@
+/* .electric-border {
+  position: relative;
+  display: inline-block;
+  border-radius: 16px;
+  padding: 3px;
+  background: linear-gradient(90deg, #00f0ff, #0066ff, #00f0ff);
+  background-size: 200% 200%;
+  animation: borderAnimation 3s linear infinite;
+}
+
+@keyframes borderAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 200% 50%;
+  }
+} */
+

@@ -1,47 +1,63 @@
 .container {
-    width: 1170px;
-    margin: 0 auto;
-    padding: 0 15px;
+  width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px;
 }
-.header-wrapper{
-max-width: 1140px;
-padding-top: 20px;
-}
-.wrapper-top{
-    max-width: 1140px;
-    background-color: rgb(235, 242, 240);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-radius: 40px;
-}
-.top-left{
-    background-color: royalblue;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    padding: 10px 20px;
-    border-radius: 40px;
-}
-.top-right{
-    width: 800px;
-    padding: 15px;
-    /* justify-content: space-between; */
-    margin-right: 20px;
-    
-}
-.nav-list{
-    max-width: 800px;
-    display: flex;
-    list-style: none;
-    justify-content: space-between;
-    
 
+.header-wrapper {
+  max-width: 1140px;
+  padding-top: 20px;
 }
-.nav-item{
-    text-decoration: none;
-    color: #000;
-    cursor: pointer;
-    font: 16px Arial, sans-serif;
-    
+
+.wrapper-top {
+  max-width: 1140px;
+  background-color: rgb(235, 242, 240);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 40px;
+}
+
+.top-left {
+  background: linear-gradient(135deg, rgb(193, 217, 209), #393838);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 2px 2px 12px;
+  border-radius: 40px;
+}
+
+.logo-img {
+  width: 140px;
+  height: 72px;
+  border-radius: 50%;
+}
+
+.top-right {
+  width: 800px;
+  padding: 15px;
+  margin-right: 80px;
+}
+
+.nav-list {
+  max-width: 800px;
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item a {
+  text-decoration: none;   /* tagidagi chiziqni olib tashlaydi */
+  color: #000;
+  font: 16px Arial, sans-serif;
+  cursor: pointer;
+  transition: color 0.3s ease, border-bottom 0.3s ease;
+  padding-bottom: 3px;
+}
+
+.nav-item a:hover {
+  color: #393838;
+  border-bottom: 2px solid #393838; /* hoverda chiziq chiqadi */
 }

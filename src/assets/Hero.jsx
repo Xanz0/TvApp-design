@@ -5,15 +5,26 @@ const Hero = () => {
   return (
     <section className="hero-section">
       <div className="hero-container">
-        {/* Chap qism (rasm) */}
+        {/* Chap qism — Televizor */}
         <div className="hero-left">
-          <img
-            src="https://picsum.photos/600/400?random=10"
-            alt="Hero"
-          />
+          <div className="tv">
+            {/* Antenna */}
+            <div className="tv-antenna">
+              <div className="antenna-left"></div>
+              <div className="antenna-right"></div>
+            </div>
+
+            {/* Screen with animation */}
+            <div className="tv-screen">
+              <div className="animated-bg"></div>
+            </div>
+
+            {/* Stand */}
+            <div className="tv-stand"></div>
+          </div>
         </div>
 
-        {/* O‘ng qism (matn) */}
+        {/* O‘ng qism — Matn */}
         <div className="hero-right">
           <h1>Bizning Innovatsion Platformamiz</h1>
           <p>

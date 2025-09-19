@@ -1,9 +1,228 @@
-#globe-container {
+/* .motion-page {
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   background: radial-gradient(ellipse at bottom, #0d1b2a, #000000);
-  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
 }
+
+.content-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1040px;
+  width: 100%;
+  gap: 40px;
+}
+
+#globe-container {
+  flex: 1;
+  height: 500px;
+  position: relative;
+}
+
 canvas {
   display: block;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.info-card {
+  flex: 1;
+  max-width: 400px;
+  padding: 2rem;
+  border-radius: 16px;
+  z-index: 10;
+  background: rgba(0, 0, 0, 0.55);
+  backdrop-filter: blur(12px);
+  border: 3px solid transparent;
+  animation: electric-border 2s linear infinite;
+  color: #fff;
+  text-align: left;
+}
+
+.card-logo {
+  width: 60px;
+  margin-bottom: 1rem;
+}
+
+.card-title {
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.card-description {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.card-btn {
+  padding: 0.7rem 1.5rem;
+  background: linear-gradient(135deg, #00f0ff, #0077ff);
+  border: none;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.card-btn:hover {
+  background: linear-gradient(135deg, #0077ff, #00f0ff);
+  transform: scale(1.05);
+}
+
+@keyframes electric-border {
+  0% {
+    border-image: linear-gradient(45deg, #00f0ff, #0077ff) 1;
+  }
+  50% {
+    border-image: linear-gradient(45deg, #0077ff, #00f0ff) 1;
+  }
+  100% {
+    border-image: linear-gradient(45deg, #00f0ff, #0077ff) 1;
+  }
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+.motion-container {
+  width: 100%;
+  min-height: 100vh;
+  background: radial-gradient(circle at center, #0d0d0d 0%, #000 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  margin-top: 20px;
+}
+
+.content-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1040px;
+  width: 100%;
+  gap: 40px;
+  padding: 20px;
+}
+
+.globe {
+  width: 500px;
+  height: 500px;
+  flex-shrink: 0;
+}
+
+.info-card {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: start;
+  background: linear-gradient(90deg, #518386, #2a3648, #518386);
+  background-size: 200% 200%;
+  animation: borderAnimation 3s linear infinite;
+  border-radius: 16px;
+   /* padding: 10px; */
+}
+
+  .electric-border {
+   
+  position: relative;
+  display: inline-block;
+  border-radius: 16px;
+  padding: 33px;
+  
+  
+}
+
+@keyframes borderAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 200% 50%;
+  }
+}
+
+
+.electric-border::before {
+  content: "";
+  position: absolute;
+  inset: -2px;
+  border-radius: 18px;
+  padding: 2px;
+  background: linear-gradient(90deg, #0ff, rgb(17, 17, 69), rgb(222, 208, 222), #0ff);
+  background-size: 400% 400%;
+  animation: electric 6s linear infinite;
+  -webkit-mask: linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+}
+
+@keyframes electric {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.card-logo {
+  width: 150px;
+  margin: 0;
+}
+
+.card-title {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.card-desc {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.card-btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(135deg, rgb(67, 67, 91), rgb(95, 193, 193));
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.card-btn:hover {
+  background: linear-gradient(135deg, #0ff, rgb(54, 94, 134));
+}
+
+@media (max-width: 900px) {
+  .content-wrapper {
+    flex-direction: column;
+    text-align: center;
+  }
+  .globe {
+    width: 350px;
+    height: 350px;
+  }
 }

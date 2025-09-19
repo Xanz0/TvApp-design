@@ -38,15 +38,16 @@ function SwiperComponent() {
       >
         {slides.map((slide, index) => (
           <SwiperSlide key={index}>
-            <a href="https://youtu.be/UV0mhY2Dxr0?si=90yzDFbCbPEgqSag" target="_blank" rel="noopener noreferrer">
+            
               <div className="slide-card">
-                <img src={slide.img} alt={slide.title} className="slide-image" />
+                <a href="https://youtu.be/UV0mhY2Dxr0?si=90yzDFbCbPEgqSag" target="_blank" rel="noopener noreferrer">
+                <img src={slide.img} alt={slide.title} className="slide-image" /> </a>
                 <div className="slide-info">
                   <h3>{slide.title}</h3>
                   <p>{slide.description}</p>
                 </div>
               </div>
-            </a>
+            
           </SwiperSlide>
         ))}
       </Swiper>

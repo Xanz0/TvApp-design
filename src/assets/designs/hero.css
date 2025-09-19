@@ -1,87 +1,102 @@
 .hero-section {
-  width: 100%;
-  background: rgb(235, 242, 240);
+  padding: 60px 20px;
+  background-color: rgb(235, 242, 240);
 }
 
 .hero-container {
-  max-width: 1100px;
+  max-width: 1140px;
+  padding: 30px 100px;
   margin: 0 auto;
   display: flex;
-  align-items: stretch; /* ikkala tomon balandligi teng bo‘lishi uchun */
+  align-items: center;
   justify-content: space-between;
-  gap: 40px;
-  min-height: 500px; /* umumiy section balandligi */
-  padding: 40px 20px;
+  gap: 80px;
+  flex-wrap: wrap;
 }
 
-.hero-left {
-  flex: 1;
+/* 📺 TV */
+.tv {
+  position: relative;
+  width: 320px;
+  height: 240px;
+  background: #111;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+  margin: 0 auto;
 }
 
-.hero-left img {
+/* Antenna */
+.tv-antenna {
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.antenna-left, .antenna-right {
+  width: 2px;
+  height: 40px;
+  background: #333;
+  position: absolute;
+  bottom: 0;
+}
+.antenna-left { left: -20px; transform: rotate(-25deg); }
+.antenna-right { right: -20px; transform: rotate(25deg); }
+
+/* Screen */
+.tv-screen {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* balandlikka moslashadi */
+  border: 8px solid #333;
   border-radius: 12px;
+  background: #000;
+  overflow: hidden;
+  position: relative;
 }
 
+/* Animated background inside TV */
+.animated-bg {
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle at 20% 30%, #ff5f6d, transparent 40%),
+              radial-gradient(circle at 80% 40%, #ffc371, transparent 40%),
+              radial-gradient(circle at 40% 70%, #42e695, transparent 40%),
+              radial-gradient(circle at 70% 80%, #4776e6, transparent 40%);
+  animation: moveColors 15s linear infinite;
+}
+
+@keyframes moveColors {
+  0% { transform: translate(0, 0) scale(1); }
+  50% { transform: translate(-25%, -25%) scale(1.2); }
+  100% { transform: translate(0, 0) scale(1); }
+}
+
+/* Stand */
+.tv-stand {
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  width: 80px;
+  height: 30px;
+  background: #333;
+  border-radius: 6px;
+  transform: translateX(-50%);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+}
+
+/* Right side */
 .hero-right {
   flex: 1;
-  display: flex;
-  flex-direction: column; /* ustma-ust joylashadi */
-  justify-content: center; /* vertikal markazga */
   text-align: start;
 }
-
 .hero-right h1 {
-  font-size: 36px;
-  font-weight: 700;
   margin-bottom: 20px;
-  color: #222;
 }
-
-.hero-right p {
-  font-size: 16px;
-  color: #555;
-  margin-bottom: 25px;
-  line-height: 1.6;
-}
-
 .hero-btn {
-  background: #0077ff;
-  color: #fff;
-  padding: 12px 28px;
+  margin-top: 20px;
+  padding: 10px 20px;
   border: none;
-  border-radius: 8px;
-  font-size: 16px;
+  background: #0077ff;
+  color: white;
+  border-radius: 6px;
   cursor: pointer;
-  width: fit-content;
-  transition: background 0.3s;
-}
-
-.hero-btn:hover {
-  background: #005fcc;
-}
-
-/* Responsiv */
-@media (max-width: 900px) {
-  .hero-container {
-    flex-direction: column;
-    min-height: auto; /* mobil uchun avtomatik balandlik */
-    text-align: center;
-  }
-
-  .hero-left img {
-    max-height: 300px;
-    border-radius: 12px;
-  }
-
-  .hero-right {
-    margin-top: 20px;
-    align-items: center; /* matn va button markazda */
-  }
-
-  .hero-btn {
-    width: auto;
-  }
 }
