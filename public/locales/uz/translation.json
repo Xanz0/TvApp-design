@@ -1,0 +1,84 @@
+{
+  "nav": {
+    "home": "Bosh sahifa",
+    "news": "Yangiliklar",
+    "about": "Biz haqimizda",
+    "programs": "Teledasturlar",
+    "creators": "Ijodkorlar"
+  },
+  "vidm": {
+    "title": "Yosh ijodkorlar kastingi bo‘lib o‘tdi",
+    "description": "Ijodkor yoshlar o‘z qobiliyatlarini namoyish etishdi. Bu kasting yosh iste’dodlarni qo‘llab-quvvatlash va ularning ijodiy ishlanmalarini keng jamoatchilikka tanishtirish maqsadida tashkil etildi.",
+    "noSupport": "Sizning brauzeringiz video qo‘llab-quvvatlamaydi."
+  },
+  "swiper": {
+    "slide1": {
+      "title": "Navoiy Yoshlar TV bilan yangi davrni kashf eting!",
+      "description": "Yoshlar uchun qiziqarli, foydali va zamonaviy kontent! Biz bilan birga bo‘ling va kelajak sari qadam tashlang."
+    },
+    "slide2": {
+      "title": "Navoiy Yoshlar TV — Yoshlar hayotining ko‘zgusi",
+      "description": "Bu yerda siz yangiliklar, ijodkorlik va kelajak uchun imkoniyatlarni topasiz. Navoiy Yoshlar TV — yoshlar bilan birga, yoshlar uchun."
+    },
+    "slide3": {
+      "title": "Ta’lim, ijod va hamkorlik — bizning ustuvor yo‘nalishimiz",
+      "description": "Navoiy Yoshlar TV yoshlarni qo‘llab-quvvatlash va ularga zamonaviy ko‘nikmalar berishni o‘z oldiga maqsad qilgan. Ustozlar bilan birga o‘qish — yorqin kelajak sari qadam."
+    }
+  },
+  "news": {
+    "header": "Yangiliklar",
+    "all": "Barchasi →",
+    "item1": {
+      "title": "Yangi loyiha ishga tushdi",
+      "description": "Bizning yangi platformamiz foydalanuvchilarga tezkor xizmatlarni taqdim etadi."
+    },
+    "item2": {
+      "title": "Jamoamiz kengaydi",
+      "description": "Yangi mutaxassislar qo‘shilib, loyihalarimiz yanada samarali bo‘lmoqda."
+    },
+    "item3": {
+      "title": "Hamkorlik bitimi",
+      "description": "Yetakchi kompaniya bilan yangi hamkorlik shartnomasi imzolandi."
+    },
+    "item4": {
+      "title": "Yutuqlarimiz",
+      "description": "Oxirgi chorakda mijozlar soni ikki barobar ko‘paydi."
+    }
+  },
+  "hero": {
+    "title": "Bizning Innovatsion Platformamiz",
+    "description": "Biz texnologiyalar yordamida mijozlarga eng yaxshi xizmatlarni taqdim etamiz. Yangiliklarni kuzatib boring va imkoniyatlardan foydalaning.",
+    "button": "Batafsil o‘qish"
+  }  ,
+  "tv": {
+    "title": "Teledasturlar",
+    "all": "Barchasi →",
+    "programs": {
+      "morning": "Tonggi dastur",
+      "afternoon": "Kunduzgi yangiliklar",
+      "evening": "Kechki show",
+      "special": "Maxsus ko‘rsatuv"
+    }
+  },
+  "publicity": {
+    "title": "Doim habardor bo‘ling",
+    "desc": "Mobil ilovamizni yuklab oling va eng so‘nggi yangiliklardan birinchi bo‘lib xabardor bo‘ling.",
+    "phoneAlt": "Telefon rasmi",
+    "appstoreAlt": "App Store orqali yuklab oling",
+    "googleplayAlt": "Google Play orqali yuklab oling"
+  },
+  "footer": {
+    "about": "Biz haqimizda",
+    "contact": "Aloqa",
+    "privacy": "Maxfiylik siyosati",
+    "rights": "Barcha huquqlar himoyalangan.",
+    "address": "Navoiy, O‘zbekiston",
+    "phone": "+998 (90) 123-45-67",
+    "email": "info@navoiy.uz"
+  },
+  "motion": {
+    "title": "Biz haqimizda",
+    "description": "Biz Navoiy Yoshlar TVmiz. Yoshlar uchun qiziqarli, foydali va motivatsion kontentlar yaratamiz. Bizning maqsadimiz – yoshlarni qo‘llab-quvvatlash, ularni yangi imkoniyatlarga ilhomlantirish. Har doim yangilik va rivojlanishga intilamiz.",
+    "button": "Batafsil"
+  }
+}

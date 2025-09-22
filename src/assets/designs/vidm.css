@@ -1,0 +1,208 @@
+/* .vidm-section {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 90vh;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  overflow: hidden;
+  padding: 40px 20px;
+}
+
+.vidm-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.vidm-content {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  text-align: center;
+  color: #fff;
+  backdrop-filter: blur(6px);
+  background: rgba(0, 0, 0, 0.35);
+  border-radius: 16px;
+  padding: 30px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.6);
+}
+
+.vidm-title {
+  font-size: 2.2rem;
+  margin-bottom: 15px;
+  color: #00d4ff;
+  text-shadow: 0 0 8px rgba(0, 212, 255, 0.7);
+}
+
+.vidm-desc {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  color: #f0f0f0;
+  line-height: 1.6;
+}
+
+.vidm-video {
+  width: 100%;
+  max-width: 700px;
+  border-radius: 12px;
+  outline: none;
+  border: 2px solid rgba(0, 212, 255, 0.5);
+  box-shadow: 0 8px 20px rgba(0, 212, 255, 0.3);
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ====== SECTION ASOSIY STIL ====== */
+.vidm-section {
+  position: relative;
+  overflow: hidden;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #0f172a;
+  color: #fff;
+  padding: 60px 20px;
+  margin-top: 20px;
+}
+
+/* ====== PRISMA 3D BACKGROUND ====== */
+.prism-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.prism {
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  background: linear-gradient(135deg, rgba(0,191,255,0.7), rgba(65,105,225,0.7));
+  transform: rotateX(45deg) rotateY(45deg);
+  animation: float 12s infinite linear;
+  filter: blur(20px);
+  border-radius: 20px;
+}
+
+.prism1 {
+  top: 10%;
+  left: 15%;
+  animation-delay: 0s;
+}
+.prism2 {
+  top: 40%;
+  left: 70%;
+  animation-delay: 3s;
+}
+.prism3 {
+  top: 70%;
+  left: 25%;
+  animation-delay: 6s;
+}
+.prism4 {
+  top: 20%;
+  left: 50%;
+  animation-delay: 9s;
+}
+
+@keyframes float {
+  0% {
+    transform: rotateX(45deg) rotateY(45deg) translateY(0);
+  }
+  50% {
+    transform: rotateX(45deg) rotateY(45deg) translateY(-40px) scale(1.1);
+  }
+  100% {
+    transform: rotateX(45deg) rotateY(45deg) translateY(0);
+  }
+}
+
+/* ====== KONTENT BLOK ====== */
+.vidm-content {
+  position: relative;
+  z-index: 5;
+  max-width: 800px;
+  text-align: center;
+  background: rgba(15, 23, 42, 0.75);
+  padding: 40px;
+  border-radius: 20px;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+}
+
+.vidm-title {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  background: linear-gradient(90deg, #38bdf8, #3b82f6, #9333ea);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.vidm-description {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  line-height: 1.6;
+  color: #dbeafe;
+}
+
+/* ====== VIDEO STIL ====== */
+.video-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.video-wrapper video {
+  max-width: 100%;
+  border-radius: 15px;
+  border: 2px solid #3b82f6;
+  box-shadow: 0 0 20px rgba(59, 130, 246, 0.6);
+}

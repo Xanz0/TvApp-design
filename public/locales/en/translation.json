@@ -1,0 +1,85 @@
+{
+  "nav": {
+    "home": "Home",
+    "news": "News",
+    "about": "About Us",
+    "programs": "Programs",
+    "creators": "Creators"
+  },
+  "vidm": {
+    "title": "Young Creators Casting Took Place",
+    "description": "Talented youth showcased their creativity. The casting was organized to support young talents and introduce their works to a wider audience.",
+    "noSupport": "Your browser does not support video playback."
+  },
+  "swiper": {
+    "slide1": {
+      "title": "Discover a new era with Navoi Youth TV!",
+      "description": "Interesting, useful and modern content for young people! Join us and take a step into the future."
+    },
+    "slide2": {
+      "title": "Navoi Youth TV — A mirror of youth life",
+      "description": "Here you will find news, creativity, and opportunities for the future. Navoi Youth TV — with youth, for youth."
+    },
+    "slide3": {
+      "title": "Education, creativity, and collaboration are our priorities",
+      "description": "Navoi Youth TV aims to support young people and provide them with modern skills. Studying with teachers is a step towards a bright future."
+    }
+  },
+  "news": {
+    "header": "News",
+    "all": "View All →",
+    "item1": {
+      "title": "New project launched",
+      "description": "Our new platform provides users with fast services."
+    },
+    "item2": {
+      "title": "Our team has expanded",
+      "description": "New specialists have joined, making projects more efficient."
+    },
+    "item3": {
+      "title": "Partnership agreement",
+      "description": "A new cooperation contract was signed with a leading company."
+    },
+    "item4": {
+      "title": "Our achievements",
+      "description": "In the last quarter, the number of clients doubled."
+    }
+    
+  },
+  "hero": {
+    "title": "Our Innovative Platform",
+    "description": "We provide the best services to clients through technology. Stay updated with the news and take advantage of opportunities.",
+    "button": "Read More"
+  },
+  "tv": {
+    "title": "TV Programs",
+    "all": "See All →",
+    "programs": {
+      "morning": "Morning Show",
+      "afternoon": "Afternoon News",
+      "evening": "Evening Show",
+      "special": "Special Program"
+    }
+  },
+  "publicity": {
+    "title": "Stay Informed",
+    "desc": "Download our mobile app and be the first to get the latest updates.",
+    "phoneAlt": "Phone image",
+    "appstoreAlt": "Download on the App Store",
+    "googleplayAlt": "Get it on Google Play"
+  },
+  "footer": {
+    "about": "About Us",
+    "contact": "Contact",
+    "privacy": "Privacy Policy",
+    "rights": "All rights reserved.",
+    "address": "Navoiy, Uzbekistan",
+    "phone": "+998 (90) 123-45-67",
+    "email": "info@navoiy.uz"
+  },
+  "motion": {
+    "title": "About Us",
+    "description": "We are Navoiy Yoshlar TV. We create engaging, useful, and motivational content for young people. Our mission is to support youth and inspire them towards new opportunities. We are always striving for innovation and growth.",
+    "button": "Learn More"
+  }
+}

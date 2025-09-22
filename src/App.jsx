@@ -5,6 +5,8 @@ import Main from './assets/Main';
 import Footer from './assets/Footer';
 import './App.css';
 import Motion from './assets/Motionn';
+import Admin from './Admin';
+import Vidm from './assets/Vidm';
 
 const App = () => {
 
@@ -20,6 +22,8 @@ const App = () => {
             } 
             />
             <Route path="/motion" element={<Motion/>} />
+            <Route path="/admin" element={<Admin />} />
+            <Route path="/vidm" element={<Vidm />} />
 
 
 

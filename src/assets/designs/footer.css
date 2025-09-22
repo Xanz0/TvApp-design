@@ -16,11 +16,13 @@
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 20px;
+  color: #ffffff;
 }
 
 .footer-text {
   font-size: 14px;
   margin: 0;
+  color: #fff;
 }
 
 .footer-links {

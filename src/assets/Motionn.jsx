@@ -197,14 +197,146 @@
 
 
 
+// import React, { useEffect, useRef } from "react";
+// import * as THREE from "three";
+// import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
+// import "./designs/motionn.css";
+// import logo from "../../public/NYoTv.png";
+
+// export default function Motionn() {
+//   const mountRef = useRef(null);
+
+//   useEffect(() => {
+//     const currentMount = mountRef.current;
+
+//     // Scene
+//     const scene = new THREE.Scene();
+
+//     // Camera
+//     const camera = new THREE.PerspectiveCamera(
+//       75,
+//       currentMount.clientWidth / currentMount.clientHeight,
+//       0.1,
+//       1000
+//     );
+//     camera.position.z = 3;
+
+//     // Renderer
+//     const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
+//     renderer.setSize(currentMount.clientWidth, currentMount.clientHeight);
+//     renderer.setPixelRatio(window.devicePixelRatio);
+//     currentMount.appendChild(renderer.domElement);
+
+//     // Light
+//     const ambientLight = new THREE.AmbientLight(0xffffff, 1);
+//     scene.add(ambientLight);
+//     const directionalLight = new THREE.DirectionalLight(0xffffff, 1);
+//     directionalLight.position.set(5, 3, 5);
+//     scene.add(directionalLight);
+
+//     // Globe texture
+//     const textureLoader = new THREE.TextureLoader();
+//     const globeTexture = textureLoader.load(
+//       "https://threejs.org/examples/textures/land_ocean_ice_cloud_2048.jpg"
+//     );
+
+//     // Globe mesh
+//     const globeGeometry = new THREE.SphereGeometry(1, 64, 64);
+//     const globeMaterial = new THREE.MeshPhongMaterial({
+//       map: globeTexture,
+//     });
+//     const globe = new THREE.Mesh(globeGeometry, globeMaterial);
+//     scene.add(globe);
+
+//     // Stars background
+//     const starGeometry = new THREE.BufferGeometry();
+//     const starCount = 2000;
+//     const starPositions = new Float32Array(starCount * 3);
+//     for (let i = 0; i < starCount * 3; i++) {
+//       starPositions[i] = (Math.random() - 0.5) * 2000;
+//     }
+//     starGeometry.setAttribute(
+//       "position",
+//       new THREE.BufferAttribute(starPositions, 3)
+//     );
+//     const starMaterial = new THREE.PointsMaterial({ color: 0xffffff });
+//     const stars = new THREE.Points(starGeometry, starMaterial);
+//     scene.add(stars);
+
+//     // Controls
+//     const controls = new OrbitControls(camera, renderer.domElement);
+//     controls.enableDamping = true;
+//     controls.enableZoom = false;
+//     controls.autoRotate = true;
+//     controls.autoRotateSpeed = 0.5;
+
+//     // Animate
+//     const animate = () => {
+//       requestAnimationFrame(animate);
+//       controls.update();
+//       renderer.render(scene, camera);
+//     };
+//     animate();
+
+//     // Resize
+//     const handleResize = () => {
+//       camera.aspect = currentMount.clientWidth / currentMount.clientHeight;
+//       camera.updateProjectionMatrix();
+//       renderer.setSize(currentMount.clientWidth, currentMount.clientHeight);
+//     };
+//     window.addEventListener("resize", handleResize);
+
+//     return () => {
+//       window.removeEventListener("resize", handleResize);
+//       currentMount.removeChild(renderer.domElement);
+//     };
+//   }, []);
+
+//   return (
+//     <div className="motion-container">
+//       <div className="content-wrapper">
+//         <div className="globe" ref={mountRef}></div>
+
+//         <div className="info-card">
+//           <div className="electric-border">
+//             <img src={logo} alt="Logo" className="card-logo" />
+//             <h2 className="card-title">Biz haqimizda</h2>
+//             <p className="card-desc">
+//               Biz Navoiy Yoshlar TVmiz. Yoshlar uchun qiziqarli, foydali va
+//               motivatsion kontentlar yaratamiz. Bizning maqsadimiz – yoshlarni
+//               qo‘llab-quvvatlash, ularni yangi imkoniyatlarga ilhomlantirish.
+//               Har doim yangilik va rivojlanishga intilamiz.
+//             </p>
+//             <button className="card-btn">Batafsil</button>
+//           </div>
+//         </div>
+//       </div>
+//     </div>
+//   );
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
 import React, { useEffect, useRef } from "react";
 import * as THREE from "three";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
 import "./designs/motionn.css";
 import logo from "../../public/NYoTv.png";
+import { useTranslation } from "react-i18next";
 
 export default function Motionn() {
   const mountRef = useRef(null);
+  const { t } = useTranslation();
 
   useEffect(() => {
     const currentMount = mountRef.current;
@@ -300,17 +432,13 @@ export default function Motionn() {
         <div className="info-card">
           <div className="electric-border">
             <img src={logo} alt="Logo" className="card-logo" />
-            <h2 className="card-title">Biz haqimizda</h2>
-            <p className="card-desc">
-              Biz Navoiy Yoshlar TVmiz. Yoshlar uchun qiziqarli, foydali va
-              motivatsion kontentlar yaratamiz. Bizning maqsadimiz – yoshlarni
-              qo‘llab-quvvatlash, ularni yangi imkoniyatlarga ilhomlantirish.
-              Har doim yangilik va rivojlanishga intilamiz.
-            </p>
-            <button className="card-btn">Batafsil</button>
+            <h2 className="card-title">{t("motion.title")}</h2>
+            <p className="card-desc">{t("motion.description")}</p>
+            <button className="card-btn">{t("motion.button")}</button>
           </div>
         </div>
       </div>
     </div>
   );
 }
+
