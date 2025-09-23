@@ -434,7 +434,12 @@ export default function Motionn() {
             <img src={logo} alt="Logo" className="card-logo" />
             <h2 className="card-title">{t("motion.title")}</h2>
             <p className="card-desc">{t("motion.description")}</p>
-            <button className="card-btn">{t("motion.button")}</button>
+            
+             <a href="https://s3.storage.servisoft.uz/navoi-council/Navoiy%20YoshlarTv.docx">
+              <button className="card-btn">
+                {t("motion.button")}
+              </button>
+              </a>
           </div>
         </div>
       </div>

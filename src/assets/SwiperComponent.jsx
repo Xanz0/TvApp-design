@@ -74,17 +74,17 @@ function SwiperComponent() {
   // matnlarni i18n orqali olamiz
   const slides = [
     {
-      img: "https://s3.storage.servisoft.uz/my-bucket/photo_2025-09-22_19-13-10.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=HZRLXY39S14ACXDW0OEZ%2F20250922%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250922T141519Z&X-Amz-Expires=604800&X-Amz-Security-Token=eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJhY2Nlc3NLZXkiOiJIWlJMWFkzOVMxNEFDWERXME9FWiIsImV4cCI6MTc1ODU2ODIxMCwicGFyZW50IjoiZGF2cm9uIn0.9wBpJHS-3ufnwU-sujMqwaKna3pj8bu_lffsdLE_YhAZZpEFwAJY8H6HkIO1-JtbrdPw5AL3AN0qlBuZ9BGJYQ&X-Amz-SignedHeaders=host&versionId=null&X-Amz-Signature=746a29adf0bb62f987e54762329a1125c8a6442ad0d08ff632b34f14f099ea8d",
+      img: "https://s3.storage.servisoft.uz/navoi-council/photo_2025-09-22_19-13-10.jpg",
       title: t("swiper.slide1.title"),
       description: t("swiper.slide1.description"),
     },
     {
-      img: "https://s3.storage.servisoft.uz/my-bucket/photo_2025-09-22_19-26-10.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=HZRLXY39S14ACXDW0OEZ%2F20250922%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250922T142733Z&X-Amz-Expires=604800&X-Amz-Security-Token=eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJhY2Nlc3NLZXkiOiJIWlJMWFkzOVMxNEFDWERXME9FWiIsImV4cCI6MTc1ODU2ODIxMCwicGFyZW50IjoiZGF2cm9uIn0.9wBpJHS-3ufnwU-sujMqwaKna3pj8bu_lffsdLE_YhAZZpEFwAJY8H6HkIO1-JtbrdPw5AL3AN0qlBuZ9BGJYQ&X-Amz-SignedHeaders=host&versionId=null&X-Amz-Signature=fd9d032505a88695e8aacaf3f5b561f3f49f8036aa956bccda4f37d7cf50f8cb",
+      img: "https://s3.storage.servisoft.uz/navoi-council/photo_2025-09-22_19-26-10.jpg",
       title: t("swiper.slide2.title"),
       description: t("swiper.slide2.description"),
     },
     {
-      img: "https://s3.storage.servisoft.uz/my-bucket/photo_2025-09-22_19-26-23.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=HZRLXY39S14ACXDW0OEZ%2F20250922%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250922T142753Z&X-Amz-Expires=604800&X-Amz-Security-Token=eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJhY2Nlc3NLZXkiOiJIWlJMWFkzOVMxNEFDWERXME9FWiIsImV4cCI6MTc1ODU2ODIxMCwicGFyZW50IjoiZGF2cm9uIn0.9wBpJHS-3ufnwU-sujMqwaKna3pj8bu_lffsdLE_YhAZZpEFwAJY8H6HkIO1-JtbrdPw5AL3AN0qlBuZ9BGJYQ&X-Amz-SignedHeaders=host&versionId=null&X-Amz-Signature=013a68ef3da5891dcfcf61deb404e18daaa4b70cb63aabbb068d2ecec397ac91",
+      img: "https://s3.storage.servisoft.uz/navoi-council/photo_2025-09-22_19-26-23.jpg",
       title: t("swiper.slide3.title"),
       description: t("swiper.slide3.description"),
     }

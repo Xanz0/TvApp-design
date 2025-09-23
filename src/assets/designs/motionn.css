@@ -157,7 +157,7 @@ canvas {
   }
 }
 
-
+/* 
 .electric-border::before {
   content: "";
   position: absolute;
@@ -171,7 +171,7 @@ canvas {
     linear-gradient(#fff 0 0);
   -webkit-mask-composite: xor;
   mask-composite: exclude;
-}
+} */
 
 @keyframes electric {
   0% {
