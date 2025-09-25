@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "img": "https://picsum.photos/600/300?random=1",
+    "titleKey": "news.item1.title",
+    "descriptionKey": "news.item1.description"
+  },
+  {
+    "id": 2,
+    "img": "https://picsum.photos/600/300?random=2",
+    "titleKey": "news.item2.title",
+    "descriptionKey": "news.item2.description"
+  },
+  {
+    "id": 3,
+    "img": "https://picsum.photos/600/300?random=3",
+    "titleKey": "news.item3.title",
+    "descriptionKey": "news.item3.description"
+  },
+  {
+    "id": 4,
+    "img": "https://picsum.photos/600/300?random=4",
+    "titleKey": "news.item4.title",
+    "descriptionKey": "news.item4.description"
+  },
+  {
+    "id": 5,
+    "img": "https://picsum.photos/600/300?random=5",
+    "titleKey": "news.item5.title",
+    "descriptionKey": "news.item5.description"
+  },
+  {
+    "id": 6,
+    "img": "https://picsum.photos/600/300?random=6",
+    "titleKey": "news.item6.title",
+    "descriptionKey": "news.item6.description"
+  },
+  {
+    "id": 7,
+    "img": "https://picsum.photos/600/300?random=7",
+    "titleKey": "news.item7.title",
+    "descriptionKey": "news.item7.description"
+  },
+  {
+    "id": 8,
+    "img": "https://picsum.photos/600/300?random=8",
+    "titleKey": "news.item8.title",
+    "descriptionKey": "news.item8.description"
+  },
+  {
+    "id": 9,
+    "img": "https://picsum.photos/600/300?random=9",
+    "titleKey": "news.item9.title",
+    "descriptionKey": "news.item9.description"
+  },
+  {
+    "id": 10,
+    "img": "https://picsum.photos/600/300?random=10",
+    "titleKey": "news.item10.title",
+    "descriptionKey": "news.item10.description"
+  },
+  {
+    "id": 11,
+    "img": "https://picsum.photos/600/300?random=11",
+    "titleKey": "news.item11.title",
+    "descriptionKey": "news.item11.description"
+  },
+  {
+    "id": 12,
+    "img": "https://picsum.photos/600/300?random=12",
+    "titleKey": "news.item12.title",
+    "descriptionKey": "news.item12.description"
+  },
+  {
+    "id": 13,
+    "img": "https://picsum.photos/600/300?random=13",
+    "titleKey": "news.item13.title",
+    "descriptionKey": "news.item13.description"
+  },
+  {
+    "id": 14,
+    "img": "https://picsum.photos/600/300?random=14",
+    "titleKey": "news.item14.title",
+    "descriptionKey": "news.item14.description"
+  },
+  {
+    "id": 15,
+    "img": "https://picsum.photos/600/300?random=15",
+    "titleKey": "news.item15.title",
+    "descriptionKey": "news.item15.description"
+  },
+  {
+    "id": 16,
+    "img": "https://picsum.photos/600/300?random=16",
+    "titleKey": "news.item16.title",
+    "descriptionKey": "news.item16.description"
+  }
+]

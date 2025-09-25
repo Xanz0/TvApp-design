@@ -1,48 +1,35 @@
-// import './designs/news.css';
-
-
-// const newsData = [
-//   {
-//     id: 1,
-//     img: "https://picsum.photos/400/250?random=1",
-//     title: "Yangi loyiha ishga tushdi",
-//     description: "Bizning yangi platformamiz foydalanuvchilarga tezkor xizmatlarni taqdim etadi."
-//   },
-//   {
-//     id: 2,
-//     img: "https://picsum.photos/400/250?random=2",
-//     title: "Jamoamiz kengaydi",
-//     description: "Yangi mutaxassislar qo‘shilib, loyihalarimiz yanada samarali bo‘lmoqda."
-//   },
-//   {
-//     id: 3,
-//     img: "https://picsum.photos/400/250?random=3",
-//     title: "Hamkorlik bitimi",
-//     description: "Yetakchi kompaniya bilan yangi hamkorlik shartnomasi imzolandi."
-//   },
-//   {
-//     id: 4,
-//     img: "https://picsum.photos/400/250?random=4",
-//     title: "Yutuqlarimiz",
-//     description: "Oxirgi chorakda mijozlar soni ikki barobar ko‘paydi."
-//   }
-// ];
+// import React, { useEffect, useState } from "react";
+// import { useTranslation } from "react-i18next";
+// import "./designs/news.css";
+// import { Link } from "react-router-dom";
 
 // const News = () => {
+//   const { t } = useTranslation();
+//   const [news, setNews] = useState([]);
+
+//   useEffect(() => {
+//     fetch("/news.json")
+//       .then((res) => res.json())
+//       .then((data) => setNews(data.slice(0, 4))); 
+//   }, []);
+
 //   return (
 //     <section className="news-section">
 //       <div className="news-header">
-//         <h3>Yangiliklar</h3>
-//         <a href="#">Barchasi →</a>
+//         <h3>{t("news.header")}</h3>
+//         <a href="/newsall">{t("news.all")}</a>
 //       </div>
 //       <div className="news-grid">
-//         {newsData.map((news) => (
-//           <div key={news.id} className="news-card">
-//             <img src={news.img} alt={news.title} />
+//         {news.map((item) => (
+          
+//           <div key={item.id} className="news-card">
+
+//             <img src={item.img} alt={t(item.titleKey)} />
 //             <div className="news-content">
-//               <h4>{news.title}</h4>
-//               <p>{news.description}</p>
+//               <h4>{t(item.titleKey)}</h4>
+//               <p>{t(item.descriptionKey)}</p>
 //             </div>
+            
 //           </div>
 //         ))}
 //       </div>
@@ -52,55 +39,49 @@
 
 // export default News;
 
-import React from "react";
+
+
+
+
+
+
+
+
+
+import React, { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import "./designs/news.css";
+import { Link } from "react-router-dom";
 
 const News = () => {
   const { t } = useTranslation();
+  const [news, setNews] = useState([]);
 
-  const newsData = [
-    {
-      id: 1,
-      img: "https://picsum.photos/400/250?random=1",
-      title: t("news.item1.title"),
-      description: t("news.item1.description")
-    },
-    {
-      id: 2,
-      img: "https://picsum.photos/400/250?random=2",
-      title: t("news.item2.title"),
-      description: t("news.item2.description")
-    },
-    {
-      id: 3,
-      img: "https://picsum.photos/400/250?random=3",
-      title: t("news.item3.title"),
-      description: t("news.item3.description")
-    },
-    {
-      id: 4,
-      img: "https://picsum.photos/400/250?random=4",
-      title: t("news.item4.title"),
-      description: t("news.item4.description")
-    }
-  ];
+  useEffect(() => {
+    fetch("/news.json")
+      .then((res) => res.json())
+      .then((data) => setNews(data.slice(0, 4))); // faqat 4ta yangilik
+  }, []);
 
   return (
     <section className="news-section">
       <div className="news-header">
         <h3>{t("news.header")}</h3>
-        <a href="#">{t("news.all")}</a>
+        <Link to="/newsall">{t("news.all")}</Link>
       </div>
       <div className="news-grid">
-        {newsData.map((news) => (
-          <div key={news.id} className="news-card">
-            <img src={news.img} alt={news.title} />
+        {news.map((item) => (
+          <Link 
+            to={`/news/${item.id}`} 
+            key={item.id} 
+            className="news-card"
+          >
+            <img src={item.img} alt={t(item.titleKey)} />
             <div className="news-content">
-              <h4>{news.title}</h4>
-              <p>{news.description}</p>
+              <h4>{t(item.titleKey)}</h4>
+              <p>{t(item.descriptionKey)}</p>
             </div>
-          </div>
+          </Link>
         ))}
       </div>
     </section>

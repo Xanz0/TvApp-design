@@ -1,0 +1,15 @@
+{
+  "programs": [
+    { "id": 1, "img": "https://picsum.photos/300/300?random=10", "key": "morning" },
+    { "id": 2, "img": "https://picsum.photos/300/300?random=11", "key": "cartoon" },
+    { "id": 3, "img": "https://picsum.photos/300/300?random=12", "key": "sports" },
+    { "id": 4, "img": "https://picsum.photos/300/300?random=13", "key": "movie" },
+    { "id": 5, "img": "https://picsum.photos/300/300?random=14", "key": "culture" },
+    { "id": 6, "img": "https://picsum.photos/300/300?random=15", "key": "business" },
+    { "id": 7, "img": "https://picsum.photos/300/300?random=16", "key": "science" },
+    { "id": 8, "img": "https://picsum.photos/300/300?random=17", "key": "competition" },
+    { "id": 9, "img": "https://picsum.photos/300/300?random=18", "key": "songs" },
+    { "id": 10, "img": "https://picsum.photos/300/300?random=19", "key": "nature" }
+  ]
+}
+

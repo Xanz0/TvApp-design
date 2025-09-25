@@ -27,23 +27,24 @@
   },
   "news": {
     "header": "Yangiliklar",
+    "headerAll": "Barcha yangiliklar",
     "all": "Barchasi →",
-    "item1": {
-      "title": "Yangi loyiha ishga tushdi",
-      "description": "Bizning yangi platformamiz foydalanuvchilarga tezkor xizmatlarni taqdim etadi."
-    },
-    "item2": {
-      "title": "Jamoamiz kengaydi",
-      "description": "Yangi mutaxassislar qo‘shilib, loyihalarimiz yanada samarali bo‘lmoqda."
-    },
-    "item3": {
-      "title": "Hamkorlik bitimi",
-      "description": "Yetakchi kompaniya bilan yangi hamkorlik shartnomasi imzolandi."
-    },
-    "item4": {
-      "title": "Yutuqlarimiz",
-      "description": "Oxirgi chorakda mijozlar soni ikki barobar ko‘paydi."
-    }
+    "item1": { "title": "Yangi loyiha ishga tushdi", "description": "Platformamiz foydalanuvchilarga tezkor xizmatlarni taqdim etadi." },
+    "item2": { "title": "Jamoamiz kengaydi", "description": "Yangi mutaxassislar qo‘shilib, samaradorlik oshdi." },
+    "item3": { "title": "Hamkorlik bitimi", "description": "Yetakchi kompaniya bilan hamkorlik shartnomasi imzolandi." },
+    "item4": { "title": "Yutuqlarimiz", "description": "Mijozlar soni ikki barobar oshdi." },
+    "item5": { "title": "Texnologiya yangilandi", "description": "Yangi texnologiyalar joriy qilindi." },
+    "item6": { "title": "Mukofot", "description": "Loyihamiz xalqaro mukofotga sazovor bo‘ldi." },
+    "item7": { "title": "Yangi filial", "description": "Toshkentda yangi ofis ochildi." },
+    "item8": { "title": "Seminar", "description": "Mutaxassislar uchun bepul seminar o‘tkazildi." },
+    "item9": { "title": "Startup qo‘llab-quvvatlash", "description": "Yosh tadbirkorlar uchun grantlar ajratildi." },
+    "item10": { "title": "Investitsiya", "description": "Loyihaga yirik investitsiya kiritildi." },
+    "item11": { "title": "Mijozlar mamnuniyati", "description": "So‘rovnomada 95% foydalanuvchilar mamnun bo‘ldi." },
+    "item12": { "title": "Sertifikatlash", "description": "Xalqaro ISO sertifikatiga ega bo‘ldik." },
+    "item13": { "title": "Onlayn xizmat", "description": "Yangi onlayn xizmat ishga tushdi." },
+    "item14": { "title": "Talabalar bilan hamkorlik", "description": "Universitetlar bilan qo‘shma loyiha yo‘lga qo‘yildi." },
+    "item15": { "title": "Raqobatbardoshlik", "description": "Mahsulotlarimiz bozorda yuqori baholandi." },
+    "item16": { "title": "Jamoaviy sayohat", "description": "Xodimlar uchun motivatsion safar tashkil qilindi." }
   },
   "hero": {
     "title": "Bizning Innovatsion Platformamiz",
@@ -80,5 +81,35 @@
     "title": "Biz haqimizda",
     "description": "Navoiy viloyati “Fidoiy yoshlar teleklubi” NNT 2019-yil aprel oyida tashkil etilgan boʻlib, direktori Sultonov Gʻulom Ikromovich.",
     "button": "Batafsil"
+  },
+  "tv": {
+    "title": "TV Dasturlar",
+    "all": "Barchasi",
+    "allTitle": "Barcha TV dasturlar",
+    "programs": {
+      "morning": "Tonggi dastur",
+      "cartoon": "Bolalar uchun multfilm",
+      "sports": "Sport yangiliklari",
+      "movie": "Kino kechasi",
+      "culture": "Madaniyat va san’at",
+      "business": "Tadbirkorlik ko‘rsatuvi",
+      "science": "Ilm-fan olamida",
+      "competition": "Musobaqa dasturi",
+      "songs": "Milliy qo‘shiqlar",
+      "nature": "Tabiat olamida"
+    },
+    "desc": {
+      "morning": "Kun yangiliklari va qiziqarli suhbatlar.",
+      "cartoon": "Eng sevimli qahramonlar sarguzashtlari.",
+      "sports": "Futbol va boshqa sport yangiliklari.",
+      "movie": "Eng yaxshi filmlar namoyishi.",
+      "culture": "San’at olamidan yangiliklar.",
+      "business": "Yosh tadbirkorlar uchun maslahatlar.",
+      "science": "Yangi kashfiyotlar va ilmiy tadqiqotlar.",
+      "competition": "Qiziqarli tanlovlar va sovrinlar.",
+      "songs": "Xalqimizning sevimli qo‘shiqlari.",
+      "nature": "Hayvonot va o‘simliklar hayoti."
+    }
   }
+  
 }

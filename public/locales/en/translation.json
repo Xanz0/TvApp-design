@@ -27,23 +27,24 @@
   },
   "news": {
     "header": "News",
+    "headerAll": "All News",
     "all": "View All →",
-    "item1": {
-      "title": "New project launched",
-      "description": "Our new platform provides users with fast services."
-    },
-    "item2": {
-      "title": "Our team has expanded",
-      "description": "New specialists have joined, making projects more efficient."
-    },
-    "item3": {
-      "title": "Partnership agreement",
-      "description": "A new cooperation contract was signed with a leading company."
-    },
-    "item4": {
-      "title": "Our achievements",
-      "description": "In the last quarter, the number of clients doubled."
-    }
+    "item1": { "title": "New project launched", "description": "Our platform now provides faster services." },
+    "item2": { "title": "Team expanded", "description": "New specialists joined us." },
+    "item3": { "title": "Partnership agreement", "description": "Signed a deal with a leading company." },
+    "item4": { "title": "Our achievements", "description": "Client numbers doubled." },
+    "item5": { "title": "Technology upgrade", "description": "Implemented new technologies." },
+    "item6": { "title": "Award", "description": "Our project won an international award." },
+    "item7": { "title": "New branch", "description": "Opened a new office in Tashkent." },
+    "item8": { "title": "Seminar", "description": "Held a free seminar for professionals." },
+    "item9": { "title": "Startup support", "description": "Grants provided for young entrepreneurs." },
+    "item10": { "title": "Investment", "description": "Secured major investment." },
+    "item11": { "title": "Customer satisfaction", "description": "95% of clients are satisfied." },
+    "item12": { "title": "Certification", "description": "Achieved international ISO certification." },
+    "item13": { "title": "Online service", "description": "Launched a new online service." },
+    "item14": { "title": "Collaboration with students", "description": "Joint project with universities." },
+    "item15": { "title": "Competitiveness", "description": "Our products rated highly in the market." },
+    "item16": { "title": "Team trip", "description": "Organized a motivational team trip." }
     
   },
   "hero": {
@@ -81,5 +82,34 @@
     "title": "About Us",
     "description": "Navoi region NGO \"Dedicated youth TV club\" was established in April 2019. Director is Sultonov Gulom Ikromovich.",
     "button": "Learn More"
+  },
+  "tv": {
+    "title": "TV Programs",
+    "all": "All",
+    "allTitle": "All TV Programs",
+    "programs": {
+      "morning": "Morning Show",
+      "cartoon": "Cartoon for Kids",
+      "sports": "Sports News",
+      "movie": "Movie Night",
+      "culture": "Culture and Arts",
+      "business": "Entrepreneurship Show",
+      "science": "In the World of Science",
+      "competition": "Competition Show",
+      "songs": "National Songs",
+      "nature": "In the World of Nature"
+    },
+    "desc": {
+      "morning": "Daily news and interesting talks.",
+      "cartoon": "Adventures of favorite characters.",
+      "sports": "Football and other sports updates.",
+      "movie": "Screening of the best movies.",
+      "culture": "News from the world of art.",
+      "business": "Tips for young entrepreneurs.",
+      "science": "New discoveries and research.",
+      "competition": "Fun contests and prizes.",
+      "songs": "Favorite songs of our people.",
+      "nature": "Life of animals and plants."
+    }
   }
 }

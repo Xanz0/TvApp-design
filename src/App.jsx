@@ -7,6 +7,12 @@ import './App.css';
 import Motion from './assets/Motionn';
 import Admin from './Admin';
 import Vidm from './assets/Vidm';
+import NewsAll from './assets/NewsAll';
+import NewsDetail from "./assets/NewsDetail";
+
+import TvPrograms from "./assets/TvPrograms";
+import TvProgramsAll from './assets/TvProgramsAll';
+import TvProgramDetail from "./assets/TvProgramDetail";
 
 const App = () => {
 
@@ -24,6 +30,10 @@ const App = () => {
             <Route path="/motion" element={<Motion/>} />
             <Route path="/admin" element={<Admin />} />
             <Route path="/vidm" element={<Vidm />} />
+            <Route path="/newsall" element={<NewsAll />} />
+            <Route path="/tvprogramsall" element={<TvProgramsAll />} />
+            <Route path="/news/:id" element={<NewsDetail />} />
+            <Route path="/tv/:id" element={<TvProgramDetail />} />
 
 
 
