@@ -1,25 +1,25 @@
 [
   {
     "id": 1,
-    "img": "https://picsum.photos/600/300?random=1",
+    "img": "https://s3.storage.servisoft.uz/navoi-council/photo_2025-09-02_22-47-29.jpg",
     "titleKey": "news.item1.title",
     "descriptionKey": "news.item1.description"
   },
   {
     "id": 2,
-    "img": "https://picsum.photos/600/300?random=2",
+    "img": "https://s3.storage.servisoft.uz/navoi-council/photo_2025-09-04_18-04-10.jpg",
     "titleKey": "news.item2.title",
     "descriptionKey": "news.item2.description"
   },
   {
     "id": 3,
-    "img": "https://picsum.photos/600/300?random=3",
+    "img": "https://s3.storage.servisoft.uz/navoi-council/photo_2025-09-25_20-22-58.jpg",
     "titleKey": "news.item3.title",
     "descriptionKey": "news.item3.description"
   },
   {
     "id": 4,
-    "img": "https://picsum.photos/600/300?random=4",
+    "img": "https://s3.storage.servisoft.uz/navoi-council/photo_2025-09-21_12-25-27.jpg",
     "titleKey": "news.item4.title",
     "descriptionKey": "news.item4.description"
   },

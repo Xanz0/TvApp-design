@@ -21,18 +21,23 @@ const TvProgramsAll = () => {
 
       <div className="programs-list">
         {currentPrograms.map((program) => (
-        //   <div className="program-card" key={program.id}>
-        //     <img src={program.img} alt={t(`tv.programs.${program.key}`)} />
-        //     <div className="program-content">
-        //       <h3>{t(`tv.programs.${program.key}`)}</h3>
-        //       <p>{t(`tv.desc.${program.key}`)}</p>
-        //     </div>
-        //   </div>
 
 
             <div className="program-card" key={program.id}>
             <Link to={`/tv/${program.id}`}>
-            <img src={program.img} alt={t(`tv.programs.${program.key}`)} />
+
+            {/* <img src={program.img} alt={t(`tv.programs.${program.key}`)} /> */}
+
+
+              <video
+                src="https://s3.storage.servisoft.uz/dermatology/AXB%20%20%2029.09.23%20%20%20%2020.00%20%20%20%2008.mp4"
+                autoPlay
+                loop
+                muted
+                playsInline
+                className="tv-video"
+              />
+
             <div className="program-content">
               <h3>{t(`tv.programs.${program.key}`)}</h3>
               <p>{t(`tv.desc.${program.key}`)}</p>

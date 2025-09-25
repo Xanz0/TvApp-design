@@ -14,11 +14,24 @@ const TvProgramDetail = () => {
   return (
     <div className="detail-container">
       <div className="detail-left">
-        <img
+
+
+        {/* <img
           src={program.img}
           alt={t(`tv.programs.${program.key}`)}
           className="detail-img"
-        />
+        /> */}
+      <a href="https://s3.storage.servisoft.uz/dermatology/AXB%20%20%2029.09.23%20%20%20%2020.00%20%20%20%2008.mp4" target="_blank" rel="noopener noreferrer">
+        <video
+                src="https://s3.storage.servisoft.uz/dermatology/AXB%20%20%2029.09.23%20%20%20%2020.00%20%20%20%2008.mp4"
+                autoPlay
+                loop
+                muted
+                playsInline
+                className="tv-video"
+              />
+
+          </a>
       </div>
       <div className="detail-right">
         <h2>{t(`tv.programs.${program.key}`)}</h2>

@@ -21,9 +21,14 @@
     justify-content: center;
     gap: 40px;
 }
+.detail-left img{
+    max-width: 500px;
+    border-radius: 12px;
+    object-fit: cover;
+}
 .detail-right{
     text-align: start;
-    padding-top: 40px;
+    padding-top: 20px;
 }
 .detail-image {
   flex: 1 1 45%;
