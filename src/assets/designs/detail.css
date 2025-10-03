@@ -1,6 +1,6 @@
 .detail-page {
   display: flex;
-  /* flex-wrap: wrap; */
+
   max-width: 1100px;
   margin: 40px auto;
   gap: 30px;
@@ -67,7 +67,6 @@ a h4{
   color: #444;
 }
 
-/* Mobile */
 @media (max-width: 768px) {
   .detail-page {
     flex-direction: column;
