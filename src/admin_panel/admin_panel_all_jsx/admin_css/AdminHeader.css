@@ -1,0 +1,83 @@
+/* Barcha sahifa uchun to‘liq ekran */
+.admin-panel-header-container {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Header box */
+.admin-header-root {
+  width: 90%;
+  max-width: 1000px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 20px;
+  padding: 40px 50px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  color: #fff;
+  backdrop-filter: blur(10px);
+  animation: fadeIn 0.8s ease;
+}
+
+/* Sarlavha */
+.admin-header-text {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+  color: #38bdf8;
+}
+
+/* Tavsif */
+.admin-header-des {
+  font-size: 18px;
+  color: #cbd5e1;
+  margin-bottom: 30px;
+}
+
+/* Tugma */
+.admin-panel-logout-btn {
+  background-color: #ef4444;
+  border: none;
+  color: white;
+  padding: 12px 28px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.admin-panel-logout-btn:hover {
+  background-color: #dc2626;
+  transform: scale(1.05);
+}
+
+/* Kirishdagi yumshoq animatsiya */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsiv dizayn */
+@media (max-width: 600px) {
+  .admin-header-root {
+    padding: 25px;
+  }
+  .admin-header-text {
+    font-size: 28px;
+  }
+  .admin-header-des {
+    font-size: 16px;
+  }
+}

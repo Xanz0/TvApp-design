@@ -3,15 +3,6 @@ import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 import "./designs/news.css";
 
-/**
- * News component
- * - API: ${BASE}/api/News
- * - Image: ${BASE}/api/Image/{id}
- *
- * Fallback logic:
- * - agar import.meta.env.VITE_ROOT_URL mavjud bo'lsa => BASE = that
- * - aks holda => BASE = "" va fetch("/api/News") tarzida ishlaydi (Vite proxy ishlatilsa yaxshi)
- */
 const News = () => {
   const { t, i18n } = useTranslation();
   const [news, setNews] = useState([]);

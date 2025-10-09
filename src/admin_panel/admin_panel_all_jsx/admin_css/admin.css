@@ -1,0 +1,134 @@
+
+.admin-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  color: white;
+  font-family: "Poppins", sans-serif;
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+.admin-title {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 25px;
+  background: linear-gradient(90deg, #00e0ff, #007bff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: 1px;
+  animation: titleGlow 3s ease-in-out infinite alternate;
+}
+
+@keyframes titleGlow {
+  0% {
+    text-shadow: 0 0 10px #00c6ff, 0 0 20px #007bff;
+  }
+  100% {
+    text-shadow: 0 0 20px #00ffff, 0 0 40px #007bff;
+  }
+}
+
+.admin-tabs {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 35px;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.tab-left {
+  display: flex;
+  gap: 15px;
+}
+
+.tab-right {
+  margin-left: auto;
+}
+
+.tab-btn,
+.logout-btn {
+  position: relative;
+  overflow: hidden;
+  padding: 10px 25px;
+  border-radius: 12px;
+  border: none;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  color: white;
+  background: linear-gradient(45deg, #007bff, #00c6ff, #007bff);
+  background-size: 200% 200%;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 10px rgba(0, 198, 255, 0.4);
+  animation: gradientMove 4s linear infinite;
+}
+
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.tab-btn:hover,
+.logout-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 20px rgba(0, 198, 255, 0.6);
+}
+
+.tab-btn:active,
+.logout-btn:active {
+  transform: scale(0.96);
+}
+
+.tab-btn.active {
+  background: linear-gradient(45deg, #00c6ff, #007bff);
+  box-shadow: 0 0 25px rgba(0, 198, 255, 0.8);
+}
+
+.logout-btn {
+  background: linear-gradient(45deg, #ff4b2b, #ff416c, #ff4b2b);
+  animation: gradientMoveRed 5s linear infinite;
+  box-shadow: 0 0 12px rgba(255, 64, 64, 0.4);
+}
+
+@keyframes gradientMoveRed {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.logout-btn:hover {
+  box-shadow: 0 0 25px rgba(255, 64, 64, 0.6);
+}
+
+@media (max-width: 768px) {
+  .admin-tabs {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .tab-left,
+  .tab-right {
+    justify-content: center;
+  }
+
+  .tab-btn,
+  .logout-btn {
+    width: 100%;
+    text-align: center;
+  }
+}

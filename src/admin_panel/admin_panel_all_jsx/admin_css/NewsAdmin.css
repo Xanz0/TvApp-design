@@ -1,0 +1,423 @@
+/* ===========================
+   NewsAdmin (Admin panel) CSS
+   =========================== */
+
+/* Base layout */
+.admin-container,
+.news-admin-container {
+  max-width: 1200px;
+  margin: 18px auto;
+  padding: 20px;
+  font-family: Inter, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  background: linear-gradient(180deg,#07101a 0%, #0b1220 100%);
+  color: #e6eef8;
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(2,6,23,0.6);
+}
+
+/* Headings */
+.admin-container h2,
+.news-admin-container h2 {
+  color: #7ee3ff;
+  margin: 0 0 16px;
+  font-size: 1.5rem;
+  letter-spacing: -0.2px;
+}
+
+/* ---------- UPLOAD SECTION ---------- */
+.upload-section,
+.admin-upload-section,
+.news-admin-upload-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+/* custom file label */
+.file-label,
+.news-admin-file-label,
+.news-admin-file-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: #0e1720;
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1px solid rgba(255,255,255,0.03);
+  cursor: pointer;
+}
+
+.file-label input,
+.news-admin-file-label input {
+  display: none;
+}
+
+.file-button,
+.news-admin-file-button {
+  background: linear-gradient(180deg,#04a7e9,#0286c6);
+  color: #fff;
+  padding: 6px 10px;
+  font-weight: 600;
+  border-radius: 6px;
+  box-shadow: 0 4px 10px rgba(2,134,189,0.15);
+  font-size: 13px;
+}
+
+.file-name,
+.news-admin-file-name {
+  color: #cbeafc;
+  font-size: 13px;
+  max-width: 320px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* upload button */
+.upload-btn,
+.admin-upload-btn,
+.news-admin-upload-btn {
+  background: #06b0ff;
+  color: #04202a;
+  padding: 9px 14px;
+  border-radius: 8px;
+  border: none;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform .12s ease, box-shadow .12s ease;
+}
+.upload-btn:hover,
+.admin-upload-btn:hover,
+.news-admin-upload-btn:hover { transform: translateY(-2px); box-shadow: 0 8px 20px rgba(4,128,180,0.12); }
+
+/* ---------- IMAGE TABLE ---------- */
+.image-table,
+.news-admin-image-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 14px;
+  background: linear-gradient(180deg,#071426,#071026);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.image-table th, .image-table td,
+.news-admin-image-table th, .news-admin-image-table td {
+  padding: 10px 12px;
+  color: #bcdff7;
+  font-size: 13px;
+  border-bottom: 1px solid rgba(255,255,255,0.03);
+  text-align: left;
+}
+
+.image-table thead th,
+.news-admin-image-table thead th {
+  background: rgba(255,255,255,0.02);
+  color: #8fe6ff;
+  font-weight: 700;
+}
+
+/* thumbnail */
+.thumbnail,
+.news-admin-thumbnail {
+  width: 66px;
+  height: 46px;
+  object-fit: cover;
+  border-radius: 6px;
+  box-shadow: inset 0 0 4px rgba(0,0,0,0.6);
+}
+
+/* small action buttons */
+.view-btn,
+.delete-btn,
+.news-admin-view-btn,
+.news-admin-delete-btn {
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: none;
+  font-size: 13px;
+  cursor: pointer;
+}
+.view-btn, .news-admin-view-btn { background: linear-gradient(180deg,#3db6ff,#2b96d6); color: #01202a; font-weight:700; }
+.delete-btn, .news-admin-delete-btn { background: linear-gradient(180deg,#ff7b76,#e04b45); color: #fff; }
+
+/* ---------- PAGINATION ---------- */
+.pagination,
+.news-admin-pagination {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  margin: 12px 0 22px;
+}
+
+.pagination button,
+.news-admin-pagination button {
+  background: rgba(255,255,255,0.02);
+  color: #bfe9ff;
+  border: 1px solid rgba(255,255,255,0.03);
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.pagination button.active,
+.news-admin-pagination button.active {
+  background: linear-gradient(180deg,#00bfff,#0292c7);
+  color: #001a22;
+  font-weight: 700;
+  box-shadow: 0 8px 20px rgba(2,134,180,0.12);
+}
+
+/* ---------- FORM ---------- */
+.news-form,
+.news-admin-news-form,
+.admin-news-form {
+  background: linear-gradient(180deg,#071027,#071224);
+  padding: 18px;
+  border-radius: 12px;
+  margin-top: 18px;
+  border: 1px solid rgba(255,255,255,0.03);
+}
+
+.form-group,
+.news-admin-form-group {
+  margin-bottom: 12px;
+}
+
+/* labels */
+.form-group label,
+.news-admin-form-group label {
+  display:block;
+  color: #84d8ff;
+  margin-bottom: 8px;
+  font-weight: 600;
+  font-size: 13px;
+}
+
+/* inputs */
+input[type="text"],
+textarea,
+.news-admin-form-group input,
+.news-admin-form-group textarea {
+  width:100%;
+  padding: 10px 12px;
+  background: #071726;
+  color: #eaf8ff;
+  border: 1px solid rgba(255,255,255,0.04);
+  border-radius: 8px;
+  outline: none;
+  resize: vertical;
+  font-size: 14px;
+  transition: border-color .12s ease, box-shadow .12s ease;
+}
+input[type="text"]:focus,
+textarea:focus,
+.news-admin-form-group input:focus,
+.news-admin-form-group textarea:focus {
+  border-color: #39c3ff;
+  box-shadow: 0 6px 20px rgba(3,128,192,0.08);
+}
+
+/* textarea height default */
+textarea { min-height: 90px; }
+
+/* save button */
+.save-btn,
+.admin-save-btn,
+.news-admin-save-btn {
+  display:inline-block;
+  background: linear-gradient(180deg,#10b981,#0e9a70);
+  color: #022219;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 10px;
+  font-weight: 800;
+  cursor: pointer;
+  margin-top: 8px;
+}
+.save-btn:hover,
+.admin-save-btn:hover,
+.news-admin-save-btn:hover { transform: translateY(-3px); box-shadow: 0 12px 30px rgba(16,185,129,0.12); }
+
+/* ---------- IMAGE SELECT GRID (for choosing image in form) ---------- */
+.image-select-section,
+.news-admin-image-select-section,
+.image-select-section {
+  margin-top: 14px;
+}
+
+.image-grid,
+.news-admin-image-grid,
+.admin-image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.image-box,
+.news-admin-image-box,
+.admin-image-card {
+  border-radius: 8px;
+  overflow: hidden;
+  background: #071421;
+  border: 2px solid transparent;
+  transition: transform .15s ease, box-shadow .15s ease, border-color .12s ease;
+  cursor: pointer;
+  text-align: center;
+  padding: 6px;
+}
+.image-box img,
+.news-admin-image-box img,
+.admin-image-card img {
+  width: 100%;
+  height: 88px;
+  object-fit: cover;
+  border-radius: 6px;
+  display:block;
+}
+
+.image-box:hover,
+.news-admin-image-box:hover,
+.admin-image-card 
+:hover { transform: translateY(-6px); box-shadow: 0 12px 30px rgba(2,6,23,0.6); }
+
+.selected-image,
+.news-admin-selected-image,
+.admin-image-card.selected {
+  border-color: #00bfff;
+  box-shadow: 0 8px 26px rgba(0,191,255,0.14);
+  transform: scale(1.02);
+}
+
+/* ---------- NEWS CARDS / LIST ---------- */
+.news-list,
+.news-admin-post-list,
+.admin-news-grid,
+.news-cardd-grid,
+.news-cardds-grid,
+.news-admin-post-list {
+  margin-top: 22px;
+}
+
+.news-cardd,
+.news-cardd-admin,
+.news-admin-post-cardd,
+.admin-news-cardd {
+  display: flex;
+  gap: 14px;
+  background: linear-gradient(180deg,#081224,#071026);
+  padding: 12px;
+  border-radius: 12px;
+  align-items: flex-start;
+  border: 1px solid rgba(255,255,255,0.02);
+  transition: transform .15s ease, box-shadow .15s ease;
+}
+.news-cardd:hover,
+.news-cardd-admin:hover,
+.news-admin-post-cardd:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 40px rgba(2,6,23,0.6);
+}
+
+.news-thumb,
+.news-admin-post-img,
+.news-img-admin,
+.news-admin-post-img {
+  width: 160px;
+  height: 110px;
+  object-fit: cover;
+  border-radius: 10px;
+  flex-shrink: 0;
+}
+
+/* content area */
+.news-info,
+.news-admin-post-content,
+.news-info-admin,
+.news-cardd-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.news-info h4,
+.news-admin-post-content h4,
+.news-info-admin h4 {
+  margin: 0 0 8px;
+  color: #85e7ff;
+  font-size: 1.05rem;
+  line-height: 1.2;
+}
+
+.news-info p,
+.news-admin-post-content p,
+.news-info-admin p {
+  margin: 0;
+  color: #cfeefe;
+  font-size: 13.5px;
+  line-height: 1.5;
+  opacity: 0.92;
+}
+
+/* actions group (edit/delete) */
+.actions,
+.news-admin-post-actions,
+.news-actions-admin,
+.admin-cardd-actions {
+  margin-top: 10px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.actions button,
+.news-admin-post-actions button,
+.news-actions-admin button,
+.admin-edit-btn,
+.admin-delete-btn,
+.edit-btn,
+.delete-btn {
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 13px;
+  transition: transform .08s ease;
+}
+
+.edit-btn,
+.admin-edit-btn,
+.actions .edit {
+  background: linear-gradient(180deg,#3b82f6,#2563eb);
+  color: #fff;
+}
+
+.delete-btn,
+.admin-delete-btn,
+.actions .delete {
+  background: linear-gradient(180deg,#ff6b6b,#e73a3a);
+  color: #fff;
+}
+
+.actions button:hover,
+.news-admin-post-actions button:hover { transform: translateY(-3px); }
+
+/* ---------- SMALL-SCREEN (Responsive) ---------- */
+@media (max-width: 980px) {
+  .news-thumb,
+  .news-admin-post-img,
+  .news-img-admin { width: 120px; height: 90px; }
+
+  .image-grid { grid-template-columns: repeat(auto-fit,minmax(90px,1fr)); }
+  .news-card, .news-cardd-admin { flex-direction: column; align-items: stretch; }
+  .news-thumb, .news-admin-post-img { width: 100%; height: 160px; }
+}
+
+@media (max-width: 520px) {
+  .upload-section, .form-grid { flex-direction: column; align-items: stretch; }
+  .file-name { max-width: 180px; }
+  .news-admin-file-name { font-size: 12px; }
+  .news-admin-file-button { padding: 6px 10px; }
+}
